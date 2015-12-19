@@ -7,57 +7,108 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: #888;
+  background-color: #326de6; }
 
 a {
-  color: #1e6bb8;
+  color: #f0f0f0;
   text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+a:hover {
+  text-decoration: underline; }
+
+strong {
+  color: #a0a0a0;
+  font-weight: 500;
+}
+
+li { 
+    color: #d0d0d0;
+}
 
 .btn {
   display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  margin-bottom: 0rem;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(50, 109, 230, 0.4);
+  border-color: rgba(50, 109, 230, 0.5);
   border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
+  border-width: 2px;
+  border-radius: 0.2rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
   .btn + .btn {
-    margin-left: 1rem; }
+    margin-left: .5rem; }
 
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(50, 109, 230, 0.9);
   border-color: rgba(255, 255, 255, 0.3); }
+
+.menu-item {
+  display: inline-block;
+  cursor: pointer;
+  width: 100px;
+  padding: 0.1rem 0.2rem;
+  margin-bottom: 0rem;
+  color: rgba(50, 109, 230, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border-color: rgba(50, 109, 230, 0.5);
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+
+.menu-item-sel {
+  display: inline-block;
+  cursor: pointer;
+  width: 100px;
+  padding: 0.1rem 0.2rem;
+  margin-bottom: 0rem;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(50, 109, 230, 1);
+  border-color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+
+.menu-item:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  background-color: rgba(50, 109, 230, 0.9);
+  border-color: rgba(255, 255, 255, 1); }
+
+.menu-item a {
+  color: #326DE6;
+  text-decoration: none; }
+.menu-item a:hover {
+  color: #FFF; }
 
 @media screen and (min-width: 64em) {
   .btn {
-    padding: 0.75rem 1rem; } }
+    padding: 0rem 0.6rem; 
+    font-size: 0.7rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .btn {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem; } }
+    padding: 0.1rem 0.4rem;
+    font-size: 0.5rem; } }
 
 @media screen and (max-width: 42em) {
   .btn {
     display: block;
     width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem; }
+    padding: 0.5rem;
+    font-size: 0.3rem; }
     .btn + .btn {
-      margin-top: 1rem;
+      margin-top: 0.2rem;
       margin-left: 0; } }
 
 .page-header {
   color: #fff;
   text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
+  background-color: #326de6; }
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -73,7 +124,8 @@ a {
 
 .project-name {
   margin-top: 0;
-  margin-bottom: 0.1rem; }
+  margin-bottom: 0.1rem; 
+  font-weight: 200; }
 
 @media screen and (min-width: 64em) {
   .project-name {
@@ -89,8 +141,8 @@ a {
 
 .project-tagline {
   margin-bottom: 2rem;
-  font-weight: normal;
-  opacity: 0.7; }
+  font-weight: 300;
+  opacity: 0.4; }
 
 @media screen and (min-width: 64em) {
   .project-tagline {
@@ -112,8 +164,10 @@ a {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #159957; }
+  color: #d0d0d0;
+  opacity: 0.8; }
 .main-content p {
+  color: #d0d0d0;
   margin-bottom: 1em; }
 .main-content code {
   padding: 2px 4px;
@@ -221,16 +275,15 @@ a {
     font-size: 1rem; } }
 
 .site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
+  color: #d0d0d0;
+  padding-top: .3rem;
+  margin-top: 10rem;
   border-top: solid 1px #eff0f1; }
 
 .site-footer-owner {
   display: block;
-  font-weight: bold; }
-
-.site-footer-credits {
-  color: #819198; }
+  font-weight: 100; 
+  font-size: 60%; }
 
 @media screen and (min-width: 64em) {
   .site-footer {
